@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sendButton = document.getElementById('send-btn');
 
     // Simulate initial message from Presidency College
-    simulateIncomingMessage('Welcome to our orientation');
+    simulateIncomingMessage('welcome to presidency college');
 
     // Simulate incoming message after delay
     function simulateIncomingMessage(message) {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         chatMessages.scrollTop = chatMessages.scrollHeight;
 
         // Simulate incoming message after sending
-        if (message.toLowerCase() !== 'welcome to the orientation') {
+        if (message.toLowerCase() !== 'welcome to presidency college') {
             simulateIncomingMessage(message);
         }
     }
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100);
 
         // Check for welcome message to show options
-        if (message.toLowerCase() === 'welcome to our orientation') {
+        if (message.toLowerCase() === 'welcome to presidency college') {
             setTimeout(function() {
                 showOptions();
             }, 1000); // Wait a moment before showing options
